@@ -1,0 +1,14 @@
+[package]
+name = "mogmod-discord"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+dotenv = "0.15.0"
+env_logger = "0.11.5"
+log = "0.4.22"
+poise = "0.6.1"
+reqwest = { version = "0.12.9", features = ["json"] }
+serde = "1.0.215"
+serenity = { version = "0.12.3", features = ["cache"] }
+tokio = { version = "1.41.1", features = ["rt-multi-thread"] }
