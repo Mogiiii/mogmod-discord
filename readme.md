@@ -1,0 +1,1 @@
+Collects data from discord to pass to [mogmod-backend](https://github.com/Mogiiii/mogmod-backend)
