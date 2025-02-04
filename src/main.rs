@@ -7,24 +7,10 @@ mod backend;
 
 // Types used by all command functions
 type Error = Box<dyn std::error::Error + Send + Sync>;
-#[allow(unused)]
-type Context<'a> = poise::Context<'a, Data, Error>;
 
 // Custom user data passed to all command functions
 pub struct Data {
 }
-
-// /// Displays your or another user's account creation date
-// #[poise::command(slash_command, prefix_command)]
-// async fn age(
-//     ctx: Context<'_>,
-//     #[description = "Selected user"] user: Option<serenity::User>,
-// ) -> Result<(), Error> {
-//     let u = user.as_ref().unwrap_or_else(|| ctx.author());
-//     let response = format!("{}'s account was created at {}", u.name, u.created_at());
-//     ctx.say(response).await?;
-//     Ok(())
-// }
 
 #[tokio::main]
 async fn main() {

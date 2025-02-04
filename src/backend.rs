@@ -3,7 +3,6 @@ use std::{env, time::SystemTime};
 use log::debug;
 use reqwest::{self, Error};
 use serde::Serialize;
-use serenity::all::Timestamp;
 
 #[derive(Serialize, Debug)]
 pub(crate) struct Message {
